@@ -4,41 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Document</title>
   </head>
   <body>
     <nav>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-      <ul>
-        <li><img src="/images/github-icon-white-6.png" width="50px" /></li>
-        <li><img src="/images/204340_linkedin-logo-png.png" width="50px" /></li>
-        <li><img src="/images/email-256.png" width="50px" /></li>
+        <div>
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Skills</a></li>
+          <li><a>Projects</a></li>
+          <li><a>Contact</a></li>
+        </div>
+        <div id="nav-icons">
+          <li>
+            <a><img src="/images/github-icon-white-6.png"/></a>
+          </li>
+          <li>
+            <a><img src="/images/204340_linkedin-logo-png.png"/></a>
+          </li>
+          <li>
+            <a><img src="/images/email-256.png"/></a>
+          </li>
+        </div>
       </ul>
     </nav>
-    <h1>Dandy</h1>
-    <h2>Web</h2>
-    <h2>Designer</h2>
-    <h2>Developer</h2>
 
-    <img
-      src="/images/reyes_dandy_headshot.jpg"
-      alt="Portrait image of myself"
-      width="100px"
-    />
-    <p>
-      Hola, my name is Dandy. I am a Latino Software Engineer and UI/UX
-      Designer. I love coding, creating and helping people get to the next level
-      in their career path as developers. I advocate for foster youth and love
-      to mentor young developers. Some of my crazy hobbies are building robots
-      from the ground up, biking, knitting, and throwing get togethers. I’m a
-      people person!
-    </p>
+    <h1>Dandy</h1>
+    <h2 id="web-border">Web</h2>
+    <h2 class="landing-page-blue-text">Designer</h2>
+    <h2 class="landing-page-blue-text">Developer</h2>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div id="my-portfolio-image-wrapper">
+      <img
+        id="my-portfolio-image"
+        src="/images/reyes_dandy_headshot.jpg"
+        alt="Portrait image of myself"
+        width="100px"
+      />
+    </div>
+    <div id="about-me-wrapper">
+      <p>
+        Hola, my name is <i>Dandy</i>. I am a
+        <b>Latino Software Engineer</b> and <b>UI/UX Designer</b>. I love
+        coding, creating and helping people get to the next level in their
+        career path as developers. I advocate for foster youth and love to
+        mentor young developers. Some of my crazy hobbies are building robots
+        from the ground up, biking, knitting, and throwing get togethers. I’m a
+        people person!
+      </p>
+    </div>
     <ul>
       Front End
       <li>HTML5</li>
