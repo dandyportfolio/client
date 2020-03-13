@@ -1,14 +1,15 @@
 import React from "react";
+import "./Title.css";
 
 class Title extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="title-container">
         <h2 className="landing-page-blue-text">Web</h2>
         <h3 id="web-border">
           Designer <br /> Developer
         </h3>
-      </React.Fragment>
+      </div>
     );
   }
 }

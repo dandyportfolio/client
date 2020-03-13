@@ -6,7 +6,7 @@ class Projects extends React.Component {
       <img
         src="/images/Design_Mock_Ups.png"
         alt="image of some of my design work"
-        width="100px"
+        width="500px"
       />
     );
   }

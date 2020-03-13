@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "label": "Front End",
+    "data": [10, 10, 10, 9],
+    "software": ["HTML5", "CSS3", "Javascript", "React"]
+  },
+  {
+    "id": 2,
+    "label": "Design",
+    "data": [9, 9, 8, 10, 10, 10],
+    "software": [
+      "Grahic Design",
+      "UX/UI",
+      "Photoshop",
+      "Illustrator",
+      "Adobe XD",
+      "Sketch"
+    ]
+  },
+  {
+    "id": 3,
+    "label": "Back End",
+    "data": [10, 9, 8, 7, 7.5],
+    "software": ["Node.js", "Express.js", "SQL", "PostgreSQL", "AWS S3"]
+  },
+  {
+    "id": 4,
+    "label": "Useful Skills",
+    "data": [10, 9, 7, 10],
+    "software": ["Git", "Agile", "Bash", "Linux CLI"]
+  }
+]

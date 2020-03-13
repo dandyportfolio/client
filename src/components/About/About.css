@@ -1,0 +1,39 @@
+.backgroundText {
+  position: absolute;
+  z-index: -1;
+  color: var(--portfolio-light-gray);
+}
+
+.about-me-wrapper {
+  position: relative;
+}
+
+.aboutInformation {
+  display: inline-block;
+  width: 100vw;
+  margin-bottom: 300px;
+}
+
+.my-portfolio-image-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 1px #757575;
+}
+
+.my-portfolio-image {
+  margin-top: -10px;
+  width: 100%;
+  height: auto;
+}
+
+.about-me-wrapper {
+  display: inline-block;
+  font-size: 25px;
+  float: right;
+  color: white;
+  width: 50%;
+}

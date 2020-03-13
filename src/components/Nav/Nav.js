@@ -1,5 +1,6 @@
 import React from "react";
 import SocialMedia from "./SocialMedia/SocialMedia";
+import "./Nav.css";
 
 class Nav extends React.Component {
   render() {

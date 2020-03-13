@@ -1,42 +1,70 @@
 import React from "react";
+import { HorizontalBar } from "react-chartjs-2";
+import "./Skills.css";
+import dataSets from "./dataSets.json";
 
 class Skills extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      data: []
+    };
+
+    this.options = {
+      scales: {
+        xAxes: [
+          {
+            ticks: {
+              min: 0,
+              max: 10
+            }
+          }
+        ]
+      }
+    };
+  }
+
+  grabJsonData() {
+    console.log("Component mounted successfully");
+    this.setState({
+      data: dataSets
+    });
+  }
+
+  componentDidMount() {
+    this.grabJsonData();
+  }
+
   render() {
     return (
-      <React.Fragment>
-        <ul>
-          Front End
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Javascript</li>
-          <li>React</li>
-        </ul>
-        <ul>
-          Design
-          <li>Graphic Designer</li>
-          <li>UX/UI</li>
-          <li>Photoshop</li>
-          <li>illustrator</li>
-          <li>Adobe XD</li>
-          <li>Sketch</li>
-        </ul>
-        <ul>
-          Back End
-          <li>Node.js</li>
-          <li>Express.js</li>
-          <li>SQL</li>
-          <li>PostgreSQL</li>
-          <li>AWS S3</li>
-        </ul>
-        <ul>
-          Useful Skills
-          <li>Git</li>
-          <li>Agile Scrum</li>
-          <li>Agile Kanban</li>
-          <li>Bash</li>
-          <li>Linux CLI</li>
-        </ul>
-      </React.Fragment>
+      <div className="container">
+        {this.state.data.map(skill => (
+          <HorizontalBar
+            key={skill.id}
+            data={{
+              labels: skill.software,
+              datasets: [
+                {
+                  label: skill.label,
+                  data: skill.data,
+                  backgroundColor: [
+                    "#3cffe7",
+                    "#ff8c69",
+                    "#3cffe7",
+                    "#ff8c69",
+                    "#3cffe7",
+                    "#ff8c69"
+                  ],
+                  borderColor: "rgb(255, 99, 132)",
+                  borderWidth: 0,
+                  barThickness: 40
+                }
+              ]
+            }}
+            options={this.options}
+          />
+        ))}
+      </div>
     );
   }
 }
