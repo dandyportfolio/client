@@ -1,7 +1,9 @@
-import React from "react";
-import "./About.css";
-import { TimelineMax } from "gsap";
-import ScrollMagic from "scrollmagic";
+import React from 'react';
+import './About.css';
+import { TimelineMax } from 'gsap';
+import ScrollMagic from 'scrollmagic';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import '../../plugins/debug.addIndicators';
 
 class About extends React.Component {
   componentDidMount() {
@@ -9,16 +11,19 @@ class About extends React.Component {
     const tl = new TimelineMax({ onUpdate: updatePercentage });
     const controller = new ScrollMagic.Controller();
 
-    tl.from(".backgroundText", 0.5, { x: 500, opacity: 0 });
+    tl.from('.background-text', 2, { x: 500 });
 
+    //? Scroll Magic START
     const scene = new ScrollMagic.Scene({
-      triggerElement: ".about-me-wrapper",
-      triggerHook: "onLeave",
-      duration: "1%"
+      triggerElement: '.about-container',
+      triggerHook: 'onLeave',
+      duration: '50%',
     })
-      .setPin(".about-me-wrapper")
       .setTween(tl)
+      .addIndicators({ indent: 20 })
+      .setPin('.about-container')
       .addTo(controller);
+    //? Scroll Magic END
 
     function updatePercentage() {
       tl.progress();
@@ -27,7 +32,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className="aboutInformation">
+      <div className="about-container">
         <div className="my-portfolio-image-wrapper">
           <img
             className="my-portfolio-image"
@@ -37,8 +42,6 @@ class About extends React.Component {
           />
         </div>
         <div className="about-me-wrapper">
-          <h1 className="backgroundText">ABOUT</h1>
-
           <p>
             Hola, my name is <i>Dandy</i>. I am a
             <b> Latino Software Engineer</b> and <b>UI/UX Designer</b>. I love
@@ -51,6 +54,7 @@ class About extends React.Component {
             biking, knitting, and throwing get togethers. I’m a people person!
           </p>
         </div>
+        <h1 className="background-text">ABOUT</h1>
       </div>
     );
   }

@@ -1,3 +1,16 @@
 .title-container {
-  margin-bottom: 500px;
+  padding-bottom: 500px;
+}
+
+#web-border {
+  margin: 0;
+  font-size: 90px;
+  color: #303036;
+  text-shadow: -1px 0 #3cffe7, 0 1px #3cffe7, 1px 0 #3cffe7, 0 -1px #3cffe7;
+}
+
+.landing-page-blue-text {
+  margin: 0;
+  font-size: 90px;
+  color: #3cffe7;
 }
