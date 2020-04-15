@@ -11,8 +11,8 @@ class Skills extends React.Component {
     };
 
     this.options = {
-      maintainAspectRatio: false,
-      responsive: false,
+      // maintainAspectRatio: false,
+      responsive: true,
       scales: {
         xAxes: [
           {
@@ -52,30 +52,33 @@ class Skills extends React.Component {
     return (
       <div className="container">
         {this.state.data.map((skill) => (
-          <HorizontalBar
-            key={skill.id}
-            data={{
-              labels: skill.software,
-              datasets: [
-                {
-                  label: skill.label,
-                  data: skill.data,
-                  backgroundColor: [
-                    '#3cffe7',
-                    '#ff8c69',
-                    '#3cffe7',
-                    '#ff8c69',
-                    '#3cffe7',
-                    '#ff8c69',
-                  ],
-                  borderColor: 'rgb(255, 99, 132)',
-                  borderWidth: 0,
-                  barThickness: 40,
-                },
-              ],
-            }}
-            options={this.options}
-          />
+          <div className="charts-container">
+            <HorizontalBar
+              className="inside"
+              key={skill.id}
+              data={{
+                labels: skill.software,
+                datasets: [
+                  {
+                    label: skill.label,
+                    data: skill.data,
+                    backgroundColor: [
+                      '#3cffe7',
+                      '#ff8c69',
+                      '#3cffe7',
+                      '#ff8c69',
+                      '#3cffe7',
+                      '#ff8c69',
+                    ],
+                    borderColor: 'rgb(255, 99, 132)',
+                    borderWidth: 0,
+                    barThickness: 40,
+                  },
+                ],
+              }}
+              options={this.options}
+            />
+          </div>
         ))}
       </div>
     );
