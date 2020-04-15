@@ -17,7 +17,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.1.1",
     "scripts": "^0.1.0",
-    "scrollmagic": "git+https://github.com/DandyReyes/ScrollMagic.git"
+    "scrollmagic": "https://github.com/DandyReyes/ScrollMagic.git"
   },
   "scripts": {
     "start": "react-scripts start",
