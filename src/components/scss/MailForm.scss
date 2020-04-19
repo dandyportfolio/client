@@ -1,32 +1,74 @@
-#ending-title {
-  font-size: 125px;
+form {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  /* Change autocomplete styles in WebKit */
+  #ending-title {
+    font-size: 125px;
+    color: #757575;
+  }
+
+  #ending-title-outline {
+    color: #303036;
+    text-shadow: -1px 0 #757575, 0 1px #757575, 1px 0 #757575, 0 -1px #757575;
+  }
+
+  button {
+    justify-self: center;
+    border-color: #3cffe7;
+    color: #3cffe7;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 30px;
+    width: 200px;
+    height: 60px;
+  }
+
+  input {
+    color: #3cffe7;
+    outline: none;
+    font-size: 50px;
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 20px;
+    background: transparent;
+    border-style: none;
+    border-bottom: 1px solid rgba(185, 185, 185, 0.5);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+    &::placeholder {
+      color: #3cffe7;
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #3cffe7;
+    }
+
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #3cffe7;
+    }
+    &:-webkit-autofill::first-line,
+    &:-webkit-autofill {
+      font-size: 50px;
+      -webkit-transition-delay: 99999s;
+    }
+  }
+}
+
+#contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
   color: #757575;
-}
 
-#ending-title-outline {
-  color: #303036;
-  text-shadow: -1px 0 #757575, 0 1px #757575, 1px 0 #757575, 0 -1px #757575;
-}
-
-input {
-  display: block;
-  background: transparent;
-  border-style: none;
-  border-bottom: 1px solid rgba(185, 185, 185, 0.5);
-  -webkit-background-clip: padding-box; /* for Safari */
-  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-
-  &::placeholder {
-    color: #3cffe7;
-  }
-
-  &:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #3cffe7;
-  }
-
-  &::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #3cffe7;
+  li {
+    border-top: 2px solid var(--portfolio-orange);
+    list-style-type: none;
+    font-size: 30px;
+    padding-top: 10px;
   }
 }

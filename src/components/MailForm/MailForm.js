@@ -28,7 +28,7 @@ class MailForm extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <form id="myData" onSubmit={this.handleSubmit}>
+        <form id="myData" onSubmit={this.handleSubmit} autocomplete="off">
           <h2 id="ending-title">
             Let's <b id="ending-title-outline">BUILD</b> Something!
           </h2>
@@ -55,7 +55,7 @@ class MailForm extends React.Component {
           />
           <button type="submit">Submit</button>
         </form>
-        <ul>
+        <ul id="contact-info">
           <li>dandyjreyes@gmail.com</li>
           <li>+1 (323) 251-8132</li>
         </ul>
