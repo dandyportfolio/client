@@ -1,0 +1,32 @@
+#ending-title {
+  font-size: 125px;
+  color: #757575;
+}
+
+#ending-title-outline {
+  color: #303036;
+  text-shadow: -1px 0 #757575, 0 1px #757575, 1px 0 #757575, 0 -1px #757575;
+}
+
+input {
+  display: block;
+  background: transparent;
+  border-style: none;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.5);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+  &::placeholder {
+    color: #3cffe7;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #3cffe7;
+  }
+
+  &::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #3cffe7;
+  }
+}

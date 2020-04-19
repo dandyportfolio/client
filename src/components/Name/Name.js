@@ -1,5 +1,5 @@
-import React from "react";
-import "./Name.css";
+import React from 'react';
+import '../css/Name.min.css';
 
 class Name extends React.Component {
   render() {

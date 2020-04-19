@@ -1,5 +1,5 @@
 import React from 'react';
-import './MailForm.css';
+import '../css/MailForm.min.css';
 
 class MailForm extends React.Component {
   constructor(props) {
@@ -7,25 +7,24 @@ class MailForm extends React.Component {
     this.state = {
       name: '',
       email: '',
-      body: '',
+      bodyText: '',
     };
   }
 
-  handleChange(event) {
+  handleChange = (event) => {
+    const { target } = event;
+    const { value } = target;
+    const { name } = target;
     this.setState({
-      [event.target.name]: [event.target.value],
+      [name]: value,
     });
-    console.log(this.state);
-  }
+  };
 
-  // handleSubmit(event) {
-  //   event.preventDefault();
-  //   this.setState({
-  //     myUserData:
-  //   });
-  //   let myUserData = new FormData(document.getElementsById('myData'));
-  //   console.log(myUserData);
-  // }
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(this.state);
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -51,7 +50,7 @@ class MailForm extends React.Component {
             type="text"
             placeholder="What can I help you with?"
             name="bodyText"
-            value={this.state.bodyText}
+            value={this.state.bodyText || ''}
             onChange={this.handleChange}
           />
           <button type="submit">Submit</button>

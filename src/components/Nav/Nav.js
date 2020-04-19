@@ -1,6 +1,6 @@
-import React from "react";
-import SocialMedia from "./SocialMedia/SocialMedia";
-import "./Nav.css";
+import React from 'react';
+import SocialMedia from './SocialMedia/SocialMedia';
+import '../css/Nav.min.css';
 
 class Nav extends React.Component {
   render() {
@@ -9,19 +9,19 @@ class Nav extends React.Component {
         <ul>
           <div>
             <li>
-              <a>Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a>About</a>
+              <a href="/">About</a>
             </li>
             <li>
-              <a>Skills</a>
+              <a href="/">Skills</a>
             </li>
             <li>
-              <a>Projects</a>
+              <a href="/">Projects</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a href="/">Contact</a>
             </li>
             <div id="nav-icons">
               <SocialMedia />

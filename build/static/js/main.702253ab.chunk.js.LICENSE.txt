@@ -1,0 +1,3 @@
+/*!
+ * @file Debug Extension for ScrollMagic.
+ */

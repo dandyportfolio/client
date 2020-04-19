@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css';
+import '../css/About.min.css';
 import { TimelineMax } from 'gsap';
 import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
@@ -37,7 +37,7 @@ class About extends React.Component {
           <img
             className="my-portfolio-image"
             src="/images/reyes_dandy_headshot.jpg"
-            alt="Portrait image of myself"
+            alt="Portrait of myself"
             width="100px"
           />
         </div>
