@@ -7,9 +7,9 @@ class Nav extends React.Component {
     return (
       <nav>
         <ul>
-          <div>
+          <div id="nav-links">
             <li>
-              <a href="/">Home</a>
+              <a href="#myHome">Home</a>
             </li>
             <li>
               <a href="/">About</a>
@@ -23,9 +23,9 @@ class Nav extends React.Component {
             <li>
               <a href="/">Contact</a>
             </li>
-            <div id="nav-icons">
-              <SocialMedia />
-            </div>
+          </div>
+          <div id="nav-icons">
+            <SocialMedia />
           </div>
         </ul>
       </nav>

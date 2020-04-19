@@ -3,7 +3,7 @@ import '../css/Name.min.css';
 
 class Name extends React.Component {
   render() {
-    return <h1>Dandy</h1>;
+    return <h1 id="myHome">Dandy</h1>;
   }
 }
 
