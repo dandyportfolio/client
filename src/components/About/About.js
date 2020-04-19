@@ -36,7 +36,7 @@ class About extends React.Component {
         <div className="my-portfolio-image-wrapper">
           <img
             className="my-portfolio-image"
-            src="/images/reyes_dandy_headshot.jpg"
+            src="/images/reyes_dandy_headshot.png"
             alt="Portrait of myself"
             width="100px"
           />
