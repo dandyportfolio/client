@@ -38,13 +38,13 @@ class Skills extends React.Component {
   }
 
   grabJsonData() {
-    console.log('Component mounted successfully');
     this.setState({
       data: dataSets,
     });
   }
 
   componentDidMount() {
+    console.log('Component mounted successfully');
     this.grabJsonData();
   }
 
@@ -54,7 +54,6 @@ class Skills extends React.Component {
         {this.state.data.map((skill) => (
           <div className="charts-container" key={skill.id}>
             <HorizontalBar
-              className="inside"
               data={{
                 labels: skill.software,
                 datasets: [
@@ -71,7 +70,7 @@ class Skills extends React.Component {
                     ],
                     borderColor: 'rgb(255, 99, 132)',
                     borderWidth: 0,
-                    barThickness: 40,
+                    barThickness: 20,
                   },
                 ],
               }}
