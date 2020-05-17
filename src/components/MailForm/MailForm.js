@@ -10,6 +10,7 @@ class MailForm extends React.Component {
       email: '',
       bodyText: '',
     };
+    this.initialState = this.state;
   }
 
   handleChange = (event) => {
@@ -32,6 +33,7 @@ class MailForm extends React.Component {
           bodyText,
         })
         .then(() => {
+          this.setState(this.initialState);
           alert('message sent');
         })
         .catch((err) => {
