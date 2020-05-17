@@ -26,7 +26,11 @@ class MailForm extends React.Component {
     const { name, email, bodyText } = this.state;
     console.log(this.state);
     axios
-      .post('http://localhost:5000/send', { name, email, bodyText })
+      .post('https://dandyportfolio.herokuapp.com/send', {
+        name,
+        email,
+        bodyText,
+      })
       .then(() => {
         alert('message sent');
       })
