@@ -24,7 +24,6 @@ class MailForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const { name, email, bodyText } = this.state;
-    console.log(this.state);
     axios
       .post('https://dandyportfolio.herokuapp.com/send', {
         name,
