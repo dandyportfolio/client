@@ -28,9 +28,10 @@ class MailForm extends React.Component {
     axios
       .post('http://localhost:5000/send', { name, email, bodyText })
       .then(() => {
-        console.log('message sent');
+        alert('message sent');
       })
       .catch((err) => {
+        alert('Message was not able to send');
         console.log(err.message);
       });
   };
