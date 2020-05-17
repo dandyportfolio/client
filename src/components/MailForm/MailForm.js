@@ -24,19 +24,22 @@ class MailForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const { name, email, bodyText } = this.state;
-    axios
-      .post('https://dandyportfolio.herokuapp.com/send', {
-        name,
-        email,
-        bodyText,
-      })
-      .then(() => {
-        alert('message sent');
-      })
-      .catch((err) => {
-        alert('Message was not able to send');
-        console.log(err.message);
-      });
+    if (name && email && bodyText) {
+      return axios
+        .post('https://dandyportfolio.herokuapp.com/send', {
+          name,
+          email,
+          bodyText,
+        })
+        .then(() => {
+          alert('message sent');
+        })
+        .catch((err) => {
+          alert('Message was not able to send');
+          console.log(err.message);
+        });
+    }
+    alert('please fill out the whole form!');
   };
 
   render() {
