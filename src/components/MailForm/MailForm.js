@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/MailForm.min.css';
+import axios from 'axios';
 
 class MailForm extends React.Component {
   constructor(props) {
@@ -22,10 +23,20 @@ class MailForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
+    const { name, email, bodyText } = this.state;
     console.log(this.state);
+    axios
+      .post('http://localhost:5000/send', { name, email, bodyText })
+      .then(() => {
+        console.log('message sent');
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
   };
 
   render() {
+    const { name, email, bodyText } = this.state;
     return (
       <React.Fragment>
         <form id="myData" onSubmit={this.handleSubmit} autoComplete="off">
@@ -36,21 +47,21 @@ class MailForm extends React.Component {
             type="text"
             name="name"
             placeholder="Name"
-            value={this.state.name}
+            value={name}
             onChange={this.handleChange}
           />
           <input
             type="email"
             placeholder="Email"
             name="email"
-            value={this.state.email}
+            value={email}
             onChange={this.handleChange}
           />
           <input
             type="text"
             placeholder="What can I help you with?"
             name="bodyText"
-            value={this.state.bodyText || ''}
+            value={bodyText || ''}
             onChange={this.handleChange}
           />
           <button type="submit">Submit</button>
