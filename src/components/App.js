@@ -9,7 +9,7 @@ import MailForm from './MailForm/MailForm';
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-166869445-1');
-ReactGA.pageview('/');
+ReactGA.pageview('/homepage');
 
 class App extends React.Component {
   render() {
