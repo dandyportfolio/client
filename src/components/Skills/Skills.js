@@ -50,7 +50,7 @@ class Skills extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div id="skills" className="container">
         {this.state.data.map((skill) => (
           <div className="charts-container" key={skill.id}>
             <HorizontalBar

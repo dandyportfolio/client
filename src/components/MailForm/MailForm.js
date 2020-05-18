@@ -47,7 +47,7 @@ class MailForm extends React.Component {
   render() {
     const { name, email, bodyText } = this.state;
     return (
-      <React.Fragment>
+      <div id="contact">
         <form id="myData" onSubmit={this.handleSubmit} autoComplete="off">
           <h2 id="ending-title">
             Let's <b id="ending-title-outline">BUILD</b> Something!
@@ -79,7 +79,7 @@ class MailForm extends React.Component {
           <li>dandyjreyes@gmail.com</li>
           <li>+1 (323) 251-8132</li>
         </ul>
-      </React.Fragment>
+      </div>
     );
   }
 }

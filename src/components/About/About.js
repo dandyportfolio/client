@@ -32,7 +32,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className="about-container">
+      <div id="about" className="about-container">
         <div className="my-portfolio-image-wrapper">
           <img
             className="my-portfolio-image"
