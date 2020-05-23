@@ -7,7 +7,7 @@ class Projects extends React.Component {
       <div
         id="projects"
         class="project-container x mandatory-scroll-snapping"
-        dir="rtl"
+        dir="ltr"
       >
         <div>
           <a
@@ -27,8 +27,7 @@ class Projects extends React.Component {
               alt="electra web design"
             />
           </a>
-        </div>
-        <div>
+
           <a
             href="https://xd.adobe.com/view/fdba7ccc-9072-4245-7ac6-bc7548bf26ad-8b8b/?fullscreen"
             target="_blank"
@@ -47,8 +46,7 @@ class Projects extends React.Component {
           >
             <img src="/images/couchcast_portfolio_web.png" alt="electra" />
           </a>
-        </div>
-        <div>
+
           <a
             href="https://xd.adobe.com/view/0a867817-4c32-418c-68f0-e26521fda571-7cb7/"
             target="_blank"
