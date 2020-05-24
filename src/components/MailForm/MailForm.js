@@ -22,11 +22,11 @@ class MailForm extends React.Component {
     });
   };
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
     const { name, email, bodyText } = this.state;
     if (name && email && bodyText) {
-      return axios
+      return await axios
         .post('https://dandyportfolio.herokuapp.com/send', {
           name,
           email,

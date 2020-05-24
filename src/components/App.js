@@ -1,6 +1,5 @@
 import React from 'react';
 import Nav from './Nav/Nav';
-import Name from './Name/Name';
 import Title from './Title/Title';
 import About from './About/About';
 import Skills from './Skills/Skills';
@@ -16,7 +15,6 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Nav />
-        <Name />
         <Title />
         <About />
         <Skills />

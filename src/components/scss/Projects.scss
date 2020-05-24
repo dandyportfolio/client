@@ -4,9 +4,9 @@
   flex: none;
 
   & > div {
-    width: 100%;
+    width: 90vw;
     height: 100vh;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     margin: 0 auto;
     flex: none;
 
