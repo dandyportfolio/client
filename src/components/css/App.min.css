@@ -1,1 +1,1 @@
-.app{height:100vh;overflow-y:scroll;scroll-snap-type:y mandatory}.app>div{height:100vh;scroll-snap-align:center}
+.app{height:100vh;overflow-y:scroll;scroll-snap-type:y mandatory;scroll-behavior:smooth}.app>div{height:100vh;scroll-snap-align:center}
