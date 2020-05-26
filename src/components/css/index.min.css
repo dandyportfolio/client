@@ -1,1 +1,1 @@
-:root{--portfolio-dark-gray: #303036;--portfolio-light-gray: #757575;--portfolio-orange: #ff8c69;--portfolio-blue: #3cffe7}body{margin:0;background-color:#303036;font-family:sans-serif}
+:root{--portfolio-black: #000;--portfolio-dark-gray: #303036;--portfolio-background-text-gray: #525252;--portfolio-light-gray: #757575;--portfolio-orange: #ff8c69;--portfolio-blue: #3cffe7;--portfolio-white: white;--portfolio-projects-green: #87ea87;--portfolio-projects-blue: #87ccea}body{margin:0;background-color:var(--portfolio-dark-gray);font-family:sans-serif}

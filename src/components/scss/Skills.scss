@@ -1,4 +1,23 @@
 .skills-container {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-skills-text {
+  position: absolute;
+  top: 10;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  color: var(--portfolio-background-text-gray);
+  font-size: 400px;
+}
+
+.skills-graph-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;

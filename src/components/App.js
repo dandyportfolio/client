@@ -6,6 +6,7 @@ import Skills from './Skills/Skills';
 import Projects from './Projects/Projects';
 import MailForm from './MailForm/MailForm';
 import ReactGA from 'react-ga';
+import './css/App.min.css';
 
 ReactGA.initialize('UA-166869445-1');
 ReactGA.pageview('/homepage');
@@ -13,14 +14,14 @@ ReactGA.pageview('/homepage');
 class App extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="app">
         <Nav />
         <Title />
         <About />
         <Skills />
         <Projects />
         <MailForm />
-      </React.Fragment>
+      </div>
     );
   }
 }

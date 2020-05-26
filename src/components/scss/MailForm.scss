@@ -1,23 +1,26 @@
 form {
+  padding-top: 10%;
   display: grid;
   justify-content: center;
   align-content: center;
 
   /* Change autocomplete styles in WebKit */
   #ending-title {
-    font-size: 125px;
-    color: #757575;
+    font-size: 80px;
+    color: var(--portfolio-light-gray);
   }
 
   #ending-title-outline {
     color: #303036;
-    text-shadow: -1px 0 #757575, 0 1px #757575, 1px 0 #757575, 0 -1px #757575;
+    text-shadow: -1px 0 var(--portfolio-light-gray),
+      0 1px var(--portfolio-light-gray), 1px 0 var(--portfolio-light-gray),
+      0 -1px var(--portfolio-light-gray);
   }
 
   button {
     justify-self: center;
-    border-color: #3cffe7;
-    color: #3cffe7;
+    border-color: var(--portfolio-blue);
+    color: var(--portfolio-blue);
     background-color: transparent;
     border-radius: 20px;
     font-size: 30px;
@@ -26,9 +29,9 @@ form {
   }
 
   input {
-    color: #3cffe7;
+    color: var(--portfolio-blue);
     outline: none;
-    font-size: 50px;
+    font-size: 30px;
     margin: 0 auto;
     width: 60%;
     margin-bottom: 20px;
@@ -39,17 +42,17 @@ form {
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 
     &::placeholder {
-      color: #3cffe7;
+      color: var(--portfolio-blue);
     }
 
     &:-ms-input-placeholder {
       /* Internet Explorer 10-11 */
-      color: #3cffe7;
+      color: var(--portfolio-blue);
     }
 
     &::-ms-input-placeholder {
       /* Microsoft Edge */
-      color: #3cffe7;
+      color: var(--portfolio-blue);
     }
     &:-webkit-autofill::first-line,
     &:-webkit-autofill {
@@ -63,12 +66,12 @@ form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  color: #757575;
+  color: var(--portfolio-light-gray);
 
   li {
     border-top: 2px solid var(--portfolio-orange);
     list-style-type: none;
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 10px;
   }
 }

@@ -16,11 +16,21 @@ nav {
       li {
         display: inline-grid;
         a {
-          color: white;
+          color: var(--portfolio-white);
           text-align: center;
-          font-size: 25px;
+          font-size: 20px;
+          font-weight: lighter;
           text-decoration: none;
           padding: 16px 25px;
+          &:hover {
+            padding: 0;
+            color: var(--portfolio-orange);
+            font-size: 30px;
+            font-weight: bolder;
+          }
+          img {
+            width: 200px;
+          }
         }
       }
     }
