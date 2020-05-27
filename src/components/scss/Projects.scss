@@ -4,7 +4,7 @@
   flex: none;
 
   & > div {
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
     margin: 0 auto;
@@ -23,6 +23,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    .mobile {
+    }
+    .desktop {
+    }
+    h1 {
+      color: var(--portfolio-black);
+    }
   }
 }
 

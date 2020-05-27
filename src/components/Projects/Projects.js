@@ -10,13 +10,19 @@ class Projects extends React.Component {
         dir="ltr"
       >
         <div>
+          <h1>Click image to see project!</h1>
           <a
             href="https://xd.adobe.com/view/15405a5a-e7bc-4163-6fd9-6299967481b8-6371/?fullscreen"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/images/my_portfolio_web.png" alt="electra" />
+            <img
+              src="/images/my_portfolio_web.png"
+              class="desktop"
+              alt="electra"
+            />
           </a>
+          <h1>ç-></h1>
         </div>
         <div>
           <a
@@ -27,6 +33,7 @@ class Projects extends React.Component {
             <img
               src="/images/electra_portfolio_web.png"
               alt="electra web design"
+              class="desktop"
               rel="noopener noreferrer"
             />
           </a>
@@ -39,6 +46,7 @@ class Projects extends React.Component {
             <img
               src="/images/electra_portfolio_mobile.png"
               alt="electra mobile design"
+              class="mobile"
               width="200px"
             />
           </a>
@@ -49,7 +57,11 @@ class Projects extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/images/couchcast_portfolio_web.png" alt="electra" />
+            <img
+              src="/images/couchcast_portfolio_web.png"
+              class="desktop"
+              alt="electra"
+            />
           </a>
 
           <a
@@ -60,6 +72,7 @@ class Projects extends React.Component {
             <img
               src="/images/couchcast_portfolio_mobile.png"
               alt="couchcast mobile design"
+              class="mobile"
               width="200px"
             />
           </a>
