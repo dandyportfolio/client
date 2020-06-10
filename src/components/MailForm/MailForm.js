@@ -25,13 +25,26 @@ class MailForm extends React.Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     const { name, email, bodyText } = this.state;
+    let config = {
+      onUploadProgress: (progressEvent) => {
+        let percentCompleted = Math.floor(
+          (progressEvent.loaded * 100) / progressEvent.total
+        );
+        console.log(percentCompleted);
+        // do whatever you like with the percentage complete
+      },
+    };
     if (name && email && bodyText) {
       return await axios
-        .post('https://dandyportfolio.herokuapp.com/send', {
-          name,
-          email,
-          bodyText,
-        })
+        .post(
+          'https://dandyportfolio.herokuapp.com/send',
+          {
+            name,
+            email,
+            bodyText,
+          },
+          config
+        )
         .then(() => {
           this.setState(this.initialState);
           alert('message sent');
