@@ -26,6 +26,7 @@ form {
     font-size: 30px;
     width: 200px;
     height: 60px;
+    outline: none;
   }
 
   input {
@@ -78,4 +79,12 @@ form {
 
 #contact {
   height: 100vh;
+}
+
+.imgBuffer {
+  text-align: center;
+  height: 150px;
+  img {
+    width: 50px;
+  }
 }
