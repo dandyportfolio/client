@@ -18,7 +18,7 @@ class Projects extends React.Component {
           >
             <img
               src="/images/my_portfolio_web.png"
-              class="desktop"
+              className="desktop"
               alt="electra"
             />
           </a>
@@ -33,7 +33,7 @@ class Projects extends React.Component {
             <img
               src="/images/electra_portfolio_web.png"
               alt="electra web design"
-              class="desktop"
+              className="desktop"
               rel="noopener noreferrer"
             />
           </a>
@@ -46,7 +46,7 @@ class Projects extends React.Component {
             <img
               src="/images/electra_portfolio_mobile.png"
               alt="electra mobile design"
-              class="mobile"
+              className="mobile"
               width="200px"
             />
           </a>
@@ -59,7 +59,7 @@ class Projects extends React.Component {
           >
             <img
               src="/images/couchcast_portfolio_web.png"
-              class="desktop"
+              className="desktop"
               alt="electra"
             />
           </a>
@@ -72,7 +72,7 @@ class Projects extends React.Component {
             <img
               src="/images/couchcast_portfolio_mobile.png"
               alt="couchcast mobile design"
-              class="mobile"
+              className="mobile"
               width="200px"
             />
           </a>

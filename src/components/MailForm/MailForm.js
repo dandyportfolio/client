@@ -50,6 +50,10 @@ class MailForm extends React.Component {
     }
   };
 
+  wordCount = (val) => {
+    return val ? `word count: ${val.length}` : `word count: 0`;
+  };
+
   render() {
     const { name, email, bodyText, isHidden } = this.state;
     return (
@@ -81,6 +85,7 @@ class MailForm extends React.Component {
                 value={bodyText || ''}
                 onChange={this.handleChange}
               />
+              <div id="countWord">{this.wordCount(bodyText)}</div>
 
               <button type="submit">Submit</button>
             </>
