@@ -15,10 +15,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <meta charSet="UTF-8"/>
-        <meta name="description" content="Dandy Reyes is a Full Stack MERN Developer and UX/UI Designer"/>
-        <meta name="keywords" content="Dandy Reyes, dandy reyes, dandyreyes"/>
-        <meta name="author" content="Dandy Reyes"/>
         <Nav />
         <Title />
         <About />
