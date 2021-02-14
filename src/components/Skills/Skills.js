@@ -85,7 +85,7 @@ class Skills extends React.Component {
     return (
       <div id="skills" className="skills-container">
         <div className="skills-graph-container">
-          {this.state.data.map((skill) => (
+          {this.state.data.map(skill => (
             <div className="charts-container" key={skill.id}>
               <HorizontalBar
                 data={{
