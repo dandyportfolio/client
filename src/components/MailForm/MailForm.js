@@ -82,7 +82,7 @@ export default function MailForm() {
           </>
         ) : (
           <div className="imgBuffer">
-            <img src="https://i.gifer.com/VAyR.gif" />
+            <img alt="loading" src="https://i.gifer.com/VAyR.gif" />
           </div>
         )}
       </form>

@@ -1,20 +1,19 @@
 import React, { useEffect } from 'react';
 import '../css/About.min.css';
 import gsap from 'gsap';
-import ScrollMagic from 'scrollmagic';
+import ScrollTrigger from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
-import '../../plugins/debug.addIndicators';
 
 export default function About() {
   useEffect(() => {
     //! START ANIMATION
     const tl = gsap.timeline({ onUpdate: updatePercentage });
-    const controller = new ScrollMagic.Controller();
+    const controller = new ScrollTrigger.Controller();
 
     tl.from('.background-text', 2, { x: 700 });
 
     //? Scroll Magic START
-    const scene = new ScrollMagic.Scene({
+    new ScrollTrigger.Scene({
       triggerElement: '.about-container',
     })
       .setTween(tl)

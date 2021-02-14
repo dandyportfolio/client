@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SocialMedia() {
   return (
-    <React.Fragment>
+    <>
       <li>
         <a
           href="https://www.github.com/dandyreyes"
@@ -26,6 +26,6 @@ export default function SocialMedia() {
           <img src="/images/email-white.ico" alt="send me a mail" />
         </a>
       </li>
-    </React.Fragment>
+    </>
   );
 }
