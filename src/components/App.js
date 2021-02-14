@@ -11,19 +11,15 @@ import './css/App.min.css';
 ReactGA.initialize('UA-166869445-1');
 ReactGA.pageview('/homepage');
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="app">
-        <Nav />
-        <Title />
-        <About />
-        <Skills />
-        <Projects />
-        <MailForm />
-      </div>
-    );
-  }
+export default function App() {
+  return (
+    <div className="app">
+      <Nav />
+      <Title />
+      <About />
+      <Skills />
+      <Projects />
+      <MailForm />
+    </div>
+  );
 }
-
-export default App;
