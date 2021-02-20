@@ -86,10 +86,6 @@ export default function MailForm() {
           </div>
         )}
       </form>
-      <ul id="contact-info">
-        <li>dandyjreyes@gmail.com</li>
-        <li>+1 (323) 251-8132</li>
-      </ul>
     </div>
   );
 }

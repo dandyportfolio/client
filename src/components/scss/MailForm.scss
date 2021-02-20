@@ -63,20 +63,6 @@ form {
   }
 }
 
-#contact-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  color: var(--portfolio-light-gray);
-
-  li {
-    border-top: 2px solid var(--portfolio-orange);
-    list-style-type: none;
-    font-size: 20px;
-    padding-top: 10px;
-  }
-}
-
 #contact {
   height: 100vh;
 }
