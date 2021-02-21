@@ -1,0 +1,54 @@
+[
+    {
+        "desktop": {
+            "id": 1,
+            "link": "https://xd.adobe.com/view/15405a5a-e7bc-4163-6fd9-6299967481b8-6371/?fullscreen",
+            "imagePath": "/images/my_portfolio_web.png",
+            "className": "desktop",
+            "alt": "My personal portfolio, desktop version"
+        },
+        "mobile": {
+            "id": 2,
+            "link": "",
+            "imagePath": "",
+            "className": "",
+            "alt": "My personal portfolio, mobile version",
+            "width": "200px"
+        }
+
+    },
+    {
+        "desktop": {
+            "id": 3,
+            "link": "https://xd.adobe.com/view/a09a6bb2-c574-4bb1-7517-6de3f8a265c0-d6ab/?fullscreen",
+            "imagePath": "/images/electra_portfolio_web.png",
+            "className": "desktop",
+            "alt": "electra web design"
+        },
+        "mobile": {
+            "id": 4,
+            "link": "https://xd.adobe.com/view/fdba7ccc-9072-4245-7ac6-bc7548bf26ad-8b8b/?fullscreen",
+            "imagePath": "/images/electra_portfolio_mobile.png",
+            "className": "mobile",
+            "alt": "electra mobile design",
+            "width": "200px"
+        }
+    },
+    {
+        "desktop": {
+            "id": 5,
+            "link": "https://xd.adobe.com/view/fc91325c-c8f0-4671-72d0-9ec317c07c74-8aa0/?fullscreen",
+            "imagePath": "/images/couchcast_portfolio_web.png",
+            "className": "desktop",
+            "alt": "electra"
+        },
+        "mobile": {
+            "id": 6,
+            "link": "https://xd.adobe.com/view/0a867817-4c32-418c-68f0-e26521fda571-7cb7/",
+            "imagePath": "/images/couchcast_portfolio_mobile.png",
+            "className": "mobile",
+            "alt": "couchcast mobile design",
+            "width": "200px"
+        }
+    }
+]
