@@ -23,8 +23,8 @@ nav {
           text-decoration: none;
           padding: 16px 25px;
           &:hover {
-            padding: 0;
             color: var(--portfolio-orange);
+            text-decoration: underline;
           }
           img {
             width: 200px;
